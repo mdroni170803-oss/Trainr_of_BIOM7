@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আপনার অ্যাপের নাম</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- এখানে আমরা আমাদের কোডগুলো এক এক করে যোগ করবো -->
+<!-- Top Header Bar -->
+<div class="header">
+    <div class="logo">BIOM</div>
+    <div class="menu-dots" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- Sidebar Area -->
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+    </div>
+    <div class="sidebar-content">
+        <button class="sidebar-item" onclick="backupData()">Backup</button>
+        <button class="sidebar-item" onclick="document.getElementById('restoreFile').click()">Restore</button>
+        <input type="file" id="restoreFile" style="display:none" onchange="restoreData(event)">
+        
+        <div class="app-info">
+            <p><strong>App For Trainer of BIOM</strong></p>
+            <p>App by Muhammad Roni Biswas (20th bach)</p>
+            <a href="https://m.me/mdroni1702" target="_blank">Messenger @mdroni1702</a>
+            <p class="version">Version: 1.0.0</p>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content Area (পরবর্তীতে এখানে আমরা অন্য কাজ করবো) -->
+<div class="main-container" id="main-content">
+    <!-- কন্টেন্ট এখানে আসবে -->
+</div>
+
+<!-- Bottom Navigation Bar -->
+<div class="bottom-nav">
+    <div class="nav-item">Admin</div>
+    <div class="nav-item">Sedulous</div>
+    <div class="nav-item">Courses</div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
